@@ -1,84 +1,4 @@
-\documentclass[12pt,a4paper]{book}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{geometry}
-\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
-\pagestyle{headings}
-\usepackage[ngerman]{babel}
-\usepackage{verbatim}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{stmaryrd}
-\usepackage{makeidx}
-\makeindex
-\usepackage{setspace}
-\usepackage[all]{xy}
-\onehalfspacing
-\usepackage[bookmarks=true]{hyperref}
-
-%% Theorems (numbered by Part)
-\newtheorem{thm}{Theorem}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}[thm]{Beispiel}
-\theoremstyle{definition}
-\newtheorem{defn}[thm]{Definition}
-\theoremstyle{plain}
-\newtheorem{prop}[thm]{Satz}
-\theoremstyle{plain}
-\newtheorem{cor}[thm]{Korollar}
-\theoremstyle{plain}
-\newtheorem{lem}[thm]{Lemma}
-\theoremstyle{remark}
-\newtheorem{rem}[thm]{Bemerkung}
-\theoremstyle{plain}
-
-%% Theorems (unnumbered)
-\newtheorem*{question*}{Frage}
-\theoremstyle{remark}
-\newtheorem*{claim*}{Behauptung}
-\theoremstyle{definition}
-\newtheorem*{notation*}{Notation}
-\theoremstyle{definition}
-\newtheorem*{example*}{Beispiel}
-\theoremstyle{plain}
-\newtheorem*{rem*}{Bemerkung}
-\theoremstyle{remark}
-
-%% User-specified commands
-\DeclareMathOperator{\rad}{rad}
-\DeclareMathOperator{\Spec}{Spec}
-\DeclareMathOperator{\Quot}{Quot}
-\DeclareMathOperator{\im}{\mathrm{im}}
-\DeclareMathOperator{\Hom}{\mathrm{Hom}}
-\DeclareMathOperator{\Mor}{\mathrm{Mor}}
-\DeclareMathOperator{\id}{\mathrm{id}}
-\DeclareMathOperator{\res}{res}
-
-%%sets
-\DeclareMathOperator{\CC}{\mathbb{C}}
-\DeclareMathOperator{\RR}{\mathbb{R}}
-\DeclareMathOperator{\QQ}{\mathbb{Q}}
-\DeclareMathOperator{\ZZ}{\mathbb{Z}}
-\DeclareMathOperator{\NN}{\mathbb{N}}
-
-%% categories
-\DeclareMathOperator{\ouv}{\mathcal{O}uv}
-\DeclareMathOperator{\set}{\underline{Set}}
-\DeclareMathOperator{\ab}{\underline{Ab}}
-\DeclareMathOperator{\cattop}{\underline{Top}}
-\DeclareMathOperator{\cring}{\underline{CRing}}
-\DeclareMathOperator{\ring}{\underline{Ring}}
-\DeclareMathOperator{\psh}{\underline{\mathcal{PS}h}}
-\DeclareMathOperator{\sh}{\underline{\mathcal{S}h}}
-\DeclareMathOperator{\aff}{\underline{Aff}}
-
-%% commands
-\newcommand{\cat}[1]{\mathcal{#1}}
-\newcommand{\sheaf}[1]{\mathcal{#1}}
-\renewcommand{\labelenumi}{(\roman{enumi})}
-\renewcommand{\labelenumii}{\arabic{enumii}.}
-
+\input{AlgGeo1.tex.preamble}
 \begin{document}
 
 %% Title page
@@ -107,77 +27,45 @@
 \label{chap:prae-varietaeten}
 
 \include{Chapter1/AlgGeo1-Chapter1-1_Einfuehrung}
-
 \include{Chapter1/AlgGeo1-Chapter1-2_Die-Zariski-Topologie}
-
 \include{Chapter1/AlgGeo1-Chapter1-3_Affine-algebraische-Mengen}
-
 \include{Chapter1/AlgGeo1-Chapter1-4_Der-Hilbertsche-Nullstellensatz}
-
 \include{Chapter1/AlgGeo1-Chapter1-5_Korrespondenz-zwischen-Radikalidealen}
-
 \include{Chapter1/AlgGeo1-Chapter1-6_Irreduzible-topologische-Raeume}
-
 \include{Chapter1/AlgGeo1-Chapter1-7_Irreduzible-algebraische-Mengen}
-
 \include{Chapter1/AlgGeo1-Chapter1-8_Quasikompakte-und-noethersche-topologische-Raeume}
-
 \include{Chapter1/AlgGeo1-Chapter1-9_Morphismen-von-affinen-algebraischen-Mengen}
-
 \include{Chapter1/AlgGeo1-Chapter1-10_Unzulaenglichkeiten}
-
 \include{Chapter1/AlgGeo1-Chapter1-11_Der-affine-Koordinatenring}
-
 \include{Chapter1/AlgGeo1-Chapter1-12_Funktorielle-Eigenschaften-des-Koordinatenrings}
-
 \include{Chapter1/AlgGeo1-Chapter1-13_Raeume-mit-Funktionen}
-
 \include{Chapter1/AlgGeo1-Chapter1-14_Der-Raum-mit-Funktionen-zu-einer-affin-algebraischen-Menge}
-
 \include{Chapter1/AlgGeo1-Chapter1-15_Funktorialitaet-der-Konstruktion}
-
 \include{Chapter1/AlgGeo1-Chapter1-16_Definition-von-Praevarietaeten}
-
 \include{Chapter1/AlgGeo1-Chapter1-17_Vergleich-mit-differenzierbaren-komplexen-Mannigfaltigkeiten}
-
 \include{Chapter1/AlgGeo1-Chapter1-18_Topologische-Eigenschaften-von-Praevarietaeten}
-
 \include{Chapter1/AlgGeo1-Chapter1-19_Offene-Untervarietaeten}
-
 \include{Chapter1/AlgGeo1-Chapter1-20_Funktionenkoerper-einer-Praevarietaet}
-
 \include{Chapter1/AlgGeo1-Chapter1-21_Abgeschlossene-Unterpraevarietaeten}
-
 \include{Chapter1/AlgGeo1-Chapter1-22_Homogene-Polynome}
-
 \include{Chapter1/AlgGeo1-Chapter1-23_Definition-des-projektiven-Raumes}
-
 \include{Chapter1/AlgGeo1-Chapter1-24_Projektive-Varietaeten}
-
 \include{Chapter1/AlgGeo1-Chapter1-25_Koordinatenwechsel-im-projektiven-Raum}
-
 \include{Chapter1/AlgGeo1-Chapter1-26_Lineare-Unterraeume-des-projektiven-Raums}
-
 \include{Chapter1/AlgGeo1-Chapter1-27_Kegel}
-
 \include{Chapter1/AlgGeo1-Chapter1-28_Quadriken}
 
 \chapter{Das Ringspektrum}
 \label{chap:das-ringspektrum}
 
 \include{Chapter2/AlgGeo1-Chapter2-1_Definition-von-Spec-A}
-
 \include{Chapter2/AlgGeo1-Chapter2-2_Topologische-Eigenschaften-von-Spec-A}
-
 \include{Chapter2/AlgGeo1-Chapter2-3_Der-Funktor-A-Spec-A}
-
 \include{Chapter2/AlgGeo1-Chapter2-4_Beispiele}
-
 \include{Chapter2/AlgGeo1-Chapter2-5_Garben}
-
 \include{Chapter2/AlgGeo1-Chapter2-6_Halme-von-Garben}
-
 \include{Chapter2/AlgGeo1-Chapter2-7_Die-zu-einer-Praegarbe-assoziierte-Garbe}
+<<<<<<< HEAD
 
 \include{Chapter2/AlgGeo1-Chapter2-8_Direktes-und-inverses-Bild-von-Garben}
 
@@ -189,10 +77,18 @@
 
 \include{Chapter2/AlgGeo1-Chapter2-12_beispiele}
 
+=======
+\include{Chapter2/AlgGeo1-Chapter2-8_Direktes-und-inverses-Bild-von-Garben}
+\include{Chapter2/AlgGeo1-Chapter2-9_Lokal-geringte-Raeume}
+\include{Chapter2/AlgGeo1-Chapter2-10_Die-Strukturgarbe-auf-Spec-A}
+\include{Chapter2/AlgGeo1-Chapter2-11_Der-Funktor-A-Spec-A}
+\include{Chapter2/AlgGeo1-Chapter2-12_Beispiele}
+>>>>>>> d388b9febcfa9ca4bcebc412bc8c9e28b5b54b70
 
 \chapter{Schemata}
 \label{chap:schemata}
 
+<<<<<<< HEAD
 \input{Chapter3/AlgGeo1-Chapter3-1_schemata}
 
 \include{Chapter3/AlgGeo1-Chapter3-2_offene-unterschemata.tex}
@@ -233,6 +129,49 @@
 
 \include{Chapter4/AlgGeo1-Chapter4-3-Faserprodukt-in-bel-Kat}
 
+=======
+\include{Chapter3/AlgGeo1-Chapter3-1_Schemata}
+\include{Chapter3/AlgGeo1-Chapter3-2_Offene-Unterschemata}
+\include{Chapter3/AlgGeo1-Chapter3-3_Morphismen-in-affinen-Schemata-hinein}
+\include{Chapter3/AlgGeo1-Chapter3-4_Morphismen-der-Form-Spec-K-X}
+\include{Chapter3/AlgGeo1-Chapter3-5_Verkleben-von-Schemata-und-disjunkte-Vereinigung}
+\include{Chapter3/AlgGeo1-Chapter3-6_Der-projektive-Raum-als-Schema}
+\include{Chapter3/AlgGeo1-Chapter3-7_Nullstellenmenge-im-projektiven-Raum}
+\include{Chapter3/AlgGeo1-Chapter3-8_Topologische-Eigenschaften}
+\include{Chapter3/AlgGeo1-Chapter3-9_Noethersche-Schemata}
+\include{Chapter3/AlgGeo1-Chapter3-10_Generische-Punkte}
+\include{Chapter3/AlgGeo1-Chapter3-11_Reduzierte-und-ganze-Schemata}
+\include{Chapter3/AlgGeo1-Chapter3-12_Schemata-von-endlichem-Typ-ueber-k}
+\include{Chapter3/AlgGeo1-Chapter3-13_Sehr-dichte-Teilmengen}
+\include{Chapter3/AlgGeo1-Chapter3-14_Praevarietaeten-als-Schemata}
+\include{Chapter3/AlgGeo1-Chapter3-15_Offene-und-abgeschlossene-Einbettung}
+\include{Chapter3/AlgGeo1-Chapter3-16_Unterschemata-und-Einbettung}
+\include{Chapter3/AlgGeo1-Chapter3-17_Projektive-und-quasiprojektive-Schemata-ueber-einen-Koerper}
+\include{Chapter3/AlgGeo1-Chapter3-18_Reduzierte-Unterschemata}
+
+\chapter{Faserprodukte}
+\label{chap:faserprodukte}
+
+\include{Chapter4/AlgGeo1-Chapter4-1_Der-Punkte-Funktor}
+\include{Chapter4/AlgGeo1-Chapter4-2_Yoneda-Lemma}
+\include{Chapter4/AlgGeo1-Chapter4-3_Faserprodukte-in-beliebigen-Kategorien}
+\include{Chapter4/AlgGeo1-Chapter4-4_Faserprodukte-von-Schemata}
+\include{Chapter4/AlgGeo1-Chapter4-5_Beispiele}
+\include{Chapter4/AlgGeo1-Chapter4-6_Basiswechsel}
+\include{Chapter4/AlgGeo1-Chapter4-7_Fasern-von-Morphismen}
+\include{Chapter4/AlgGeo1-Chapter4-8_Eigenschaften-von-Schemata-Morphismen}
+\include{Chapter4/AlgGeo1-Chapter4-9_Urbilder-und-Schema-theoretische-Schnitte-von-Unterschemata}
+\include{Chapter4/AlgGeo1-Chapter4-10_Affine-und-projektive-Raeume-ueber-beliebige-Basen}
+\include{Chapter4/AlgGeo1-Chapter4-11_Diagonal-Graph-und-Kern-in-beliebigen-Kategorien}
+\include{Chapter4/AlgGeo1-Chapter4-12_Diagonal-fuer-Schemata}
+\include{Chapter4/AlgGeo1-Chapter4-13_Separierte-Morphismen}
+\include{Chapter4/AlgGeo1-Chapter4-14_Eigentliche-Morphismen}
+
+\chapter{Dimensionen}
+\label{chap:dimensionen}
+
+\include{Chapter5/AlgGeo1-Chapter5-1_Allgemeine-Schemata}
+>>>>>>> d388b9febcfa9ca4bcebc412bc8c9e28b5b54b70
 
 \include{Chapter4/AlgGeo1-Chapter4-4-Faserprodukte-von-Schemata.tex}
 

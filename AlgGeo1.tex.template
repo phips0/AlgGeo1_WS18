@@ -1,0 +1,53 @@
+\input{AlgGeo1.tex.preamble}
+\begin{document}
+
+%% Title page
+\title{Algebraische Geometrie I}
+\author{Prof. Dr. Venjakob}
+\maketitle
+
+\tableofcontents{}
+\newpage{}
+
+\section*{Literatur}
+\begin{itemize}
+\item Görtz, Wedhorn. \emph{Algebraic Geometry I}
+\item Hartshorne. \emph{Algebraic Geometry}
+\item Shafarevich. \emph{Basic Algebraic Geometry 1 \& 2}
+\item Grothendieck. \emph{Eléments de géometrie algébrique, EGA I-IV}
+\end{itemize}
+
+\paragraph{Kommutative Algebra}
+\begin{itemize}
+\item Brüske, Ischebeck, Vogel. \emph{Kommutative Algebra}
+\item Kunz. \emph{Einführung in die kommutative Algebra und algebraische Geometrie}
+\end{itemize}
+
+\chapter{Prä-Varietäten}
+\label{chap:prae-varietaeten}
+
+%%% template:chapter1
+
+\chapter{Das Ringspektrum}
+\label{chap:das-ringspektrum}
+
+%%% template:chapter2
+
+\chapter{Schemata}
+\label{chap:schemata}
+
+%%% template:chapter3
+
+\chapter{Faserprodukte}
+\label{chap:faserprodukte}
+
+%%% template:chapter4
+
+\chapter{Dimensionen}
+\label{chap:dimensionen}
+
+%%% template:chapter5
+
+\newpage{}
+\printindex{}
+\end{document}
